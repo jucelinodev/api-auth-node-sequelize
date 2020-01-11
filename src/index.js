@@ -1,3 +1,4 @@
 import server from './server'
 
-server.listen(3000, () => console.log('Server run in port 3000'))
+server.listen(process.env.PORT, () =>
+  console.log(`Server running in ${process.env.APP_URL}:${process.env.PORT}`))
