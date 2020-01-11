@@ -6,11 +6,11 @@ import databaseConfig from '../config/database'
 const models = [User]
 
 class Database {
-  constructor() {
+  constructor () {
     this.init()
   }
 
-  init() {
+  init () {
     this.connection = new Sequelize(databaseConfig)
 
     models
