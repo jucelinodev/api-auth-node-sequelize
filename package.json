@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon src/index.js",
-    "lint": "standard --fix"
+    "lint": "standard --fix",
+    "build": "sucrase ./src -d ./dist --transforms imports",
+    "start": "node dist/index.js"
   },
   "keywords": [],
   "author": "",
