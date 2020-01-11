@@ -16,10 +16,10 @@ A simple API for JWT user authentication.
 $ git clone https://github.com/jucelinodev/api-auth-node-sequelize.git
 ```
 
-- Enter the directory
+- Enter directory
 
 ```
-$ cd api-auth-node-sequelize
+$ cd /api-auth-node-sequelize
 ```
 
 -To install all dependencies, you must run the following command:
@@ -43,7 +43,7 @@ $ npx sequelize db:migrations
 - Generate build:
 
 ```
-$ npm run buil
+$ npm run build
 ```
 
 - To run project:
