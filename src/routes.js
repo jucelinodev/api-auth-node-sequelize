@@ -1,6 +1,7 @@
 import { Router } from 'express'
 
 import UserController from './auth/controllers/UserController'
+import SessionController from './auth/controllers/SessionController'
 
 import ValidateUserStore from './auth/validator/UserStore'
 
@@ -11,5 +12,6 @@ router.get('/', (req, res) => {
 })
 
 router.post('/user', ValidateUserStore, UserController.store)
+router.post('/session', SessionController.store)
 
 export default router
