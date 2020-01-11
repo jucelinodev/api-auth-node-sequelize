@@ -4,6 +4,7 @@ import UserController from './auth/controllers/UserController'
 import SessionController from './auth/controllers/SessionController'
 
 import ValidateUserStore from './auth/validator/UserStore'
+import ValidateSessionStore from './auth/validator/SessionStore'
 
 const router = Router()
 
@@ -12,6 +13,6 @@ router.get('/', (req, res) => {
 })
 
 router.post('/user', ValidateUserStore, UserController.store)
-router.post('/session', SessionController.store)
+router.post('/session', ValidateSessionStore, SessionController.store)
 
 export default router
