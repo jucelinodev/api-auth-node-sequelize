@@ -22,7 +22,7 @@ $ git clone https://github.com/jucelinodev/api-auth-node-sequelize.git
 $ cd /api-auth-node-sequelize
 ```
 
--To install all dependencies, you must run the following command:
+- To install all dependencies, you must run the following command:
 
 ```
 $ npm install
