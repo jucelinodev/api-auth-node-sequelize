@@ -16,7 +16,7 @@ router.post('/session', ValidateSessionStore, SessionController.store)
 router.use(authVerify)
 
 router.get('/', (req, res) => {
-  res.json({ message: 'ok' })
+  res.json({ id: req.userId })
 })
 
 export default router
