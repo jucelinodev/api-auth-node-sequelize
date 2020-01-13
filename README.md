@@ -28,11 +28,30 @@ $ cd /api-auth-node-sequelize
 $ npm install
 ```
 
-- Create a database in your development environment
+- Change .env.exemple to .env and enter valid data for database connection and other settings:
 
+```
+APP_URL=
+PORT=
 
-- Change .env.exemple to .env and enter valid data for database connection and other settings
+# Auth
 
+APP_SECRET=
+
+# Database
+
+DB_HOST=
+DB_USER=
+DB_PASS=
+DB_NAME=
+
+```
+
+- Create a database in your development environment:
+
+```
+$ npx sequelize db:create
+```
 
 - To run the migrations:
 
