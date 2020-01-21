@@ -56,7 +56,7 @@ $ npx sequelize db:create
 - To run the migrations:
 
 ```
-$ npx sequelize db:migrations
+$ npx sequelize db:migrate
 ```
 
 - Generate build:
