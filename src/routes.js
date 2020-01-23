@@ -3,15 +3,15 @@ import { Router } from 'express'
 import UserController from './auth/controllers/UserController'
 import SessionController from './auth/controllers/SessionController'
 
-import ValidateUserStore from './auth/validator/UserStore'
-import ValidateSessionStore from './auth/validator/SessionStore'
+import validateUserStore from './auth/validator/UserStore'
+import validateSessionStore from './auth/validator/SessionStore'
 
 import authVerify from './auth/middlewares/authVerify'
 
 const router = Router()
 
-router.post('/user', ValidateUserStore, UserController.store)
-router.post('/session', ValidateSessionStore, SessionController.store)
+router.post('/user', validateUserStore, UserController.store)
+router.post('/session', validateSessionStore, SessionController.store)
 
 router.use(authVerify)
 
